@@ -165,6 +165,7 @@ if (file_exists($path)) {
 }
 
 echo "<br>";
+echo "<br>";
 
 require_once __DIR__ . "/../src/functions.php";
 
@@ -172,25 +173,72 @@ echo calculateSum(10,20);
 echo "<br>";
 echo isEven(4) ? "Even" : "Odd";
 
+echo "<hr>";
+
 // ====================================================
 
-// 6. 
+// 6. Arrays
+
+$path = "../src/functions.php";
+
+if (file_exists($path)) {
+    echo "File found!";
+} else {
+    echo "File NOT found!";
+}
+
+echo "<br><br>";
+
+require_once "../src/arrays.php";
+
+echo "INDEXED ARRAYS <br>";
+echo indexedArrays();
+
+echo "<br>";
+
+echo "ASSOCIATIVE ARRAYS <br>";
+echo associativeArrays();
+
+echo "<br>";
+
+echo "MULTIDIMENSIONAL ARRAYS <br>";
+echo multidimensionalArrays();
+
+echo "<br>";
+
+echo "IMPORTANT ARRAY FUNCTIONS <br>";
+echo importantArrayFunctions();
+
+echo "<br>";
+
+echo "SORTING ARRAYS <br>";
+echo sortingArrays();
+
+echo "<hr>";
 
 // ====================================================
 
 // 7. 
 
+echo "<hr>";
+
 // ====================================================
 
 // 8.
+
+echo "<hr>";
 
 // ====================================================
 
 // 9.
 
+echo "<hr>";
+
 // ====================================================
 
 // 10.
+
+echo "<hr>";
 
 // ====================================================
 
