@@ -23,6 +23,8 @@ var_dump($isMale);
 echo "<br>";
 var_dump($salary);
 
+echo "<hr>";
+
 // ====================================================
 
 // 2. Operators
@@ -50,6 +52,7 @@ $x *= 2; // 8
 $x /= 4; // 2
 
 echo "The value of X is " . $x;
+echo "<br>";
 
 // ------------------------
 
@@ -58,9 +61,13 @@ $g = "5";
 $h = 5;
 
 var_dump($g == $h); // true
+echo "<br>";
 var_dump($g === $h); // false
+echo "<br>";
 var_dump($g != $h); // false
+echo "<br>";
 var_dump($g !== $h); // true
+echo "<br>";
 
 // ------------------------
 
@@ -75,6 +82,7 @@ if ($age > 18 && $isVerified) {
 if ($age < 18 || !$isVerified) {
     echo "Access Denied!";
 }
+echo "<br>";
 
 // ------------------------
 
@@ -84,6 +92,7 @@ $marks = 60;
 $result = ($marks >= 60) ? "Pass" : "Fail";
 
 echo $result;
+echo "<br>";
 
 // ------------------------
 
@@ -91,15 +100,99 @@ echo $result;
 $username = $_GET['username'] ?? "Guest";
 
 echo $username;
+echo "<br>";
 
 // ------------------------
 
 // g. Spaceship Operator (Advanced but Good to Know)
 echo 5 <=> 10; // -1
+echo "<br>";
 echo 10 <=> 10; // 0
+echo "<br>";
 echo 15 <=> 10; // 1
+
+echo "<hr>";
 
 // ====================================================
 
 // 3. Conditionals
+
+$mark = 75;
+
+if ($mark >= 80) {
+    echo "Distinction!";
+} elseif ($mark >= 70) {
+    echo "First Division!";
+} elseif ($mark >= 60) {
+    echo "Second Division!";
+} else if ($mark >= 50) {
+    echo "Third Division!";
+} else {
+    echo "Failed!";
+}
+
+echo "<hr>";
+
+// ====================================================
+
+// 4. Loops
+
+for ($i = 1; $i <= 5; $i++) {
+    echo "Number: $i <br>";
+}
+
+echo "<hr>";
+
+$numbers = [10, 20, 30];
+
+echo "The array numbers are: <br>";
+foreach ($numbers as $num) {
+    echo $num . "<br>";
+}
+
+echo "<hr>";
+
+// ====================================================
+
+// 5. Functions
+
+$path = __DIR__ . "/../src/functions.php";
+
+if (file_exists($path)) {
+    echo "File found!";
+} else {
+    echo "File NOT found!";
+}
+
+echo "<br>";
+
+require_once __DIR__ . "/../src/functions.php";
+
+echo calculateSum(10,20);
+echo "<br>";
+echo isEven(4) ? "Even" : "Odd";
+
+// ====================================================
+
+// 6. 
+
+// ====================================================
+
+// 7. 
+
+// ====================================================
+
+// 8.
+
+// ====================================================
+
+// 9.
+
+// ====================================================
+
+// 10.
+
+// ====================================================
+
+// 11.
 
