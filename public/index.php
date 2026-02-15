@@ -242,6 +242,7 @@
 
         ?>
 
+        <!-- Basic form to test - POST method -->
         <form method="POST">
             <input type="text" name="email" placeholder="Enter Email">
             <button type="submit">Submit</button>
