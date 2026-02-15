@@ -265,7 +265,31 @@
 
         // ====================================================
 
-        // 8.
+        // 8. Form Handling
+
+        require_once "../src/validation.php";
+
+        [$name, $email, $errors, $success] = validateForm();
+
+        ?>
+
+        <h2>Simple Registration Form</h2>
+        
+        <p><?= $success ?></p>
+        <p><?= $errors ?></p>
+
+        <form method="POST">
+
+            <label>Name:</label><br>
+            <input type="text" name="name" value="<?= $name ?>"><br><br>
+
+            <label>Email:</label><br>
+            <input type="text" name="email" value="<?= $email ?>"><br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <?php
 
         echo "<hr>";
 
