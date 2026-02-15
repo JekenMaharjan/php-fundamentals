@@ -37,9 +37,25 @@ php-fundamentals/
 6. Arrays
 7. Superglobals ($_GET, $_POST, $_SERVER)
 8. Form Handling
-9.  Sessions
+9. Sessions
 10. Basic Validation
 11. PDO Database Connection (Intro level)
 
 ---
 
+## To run PHP Project in localhost
+
+Run:
+```bash
+php -S localhost:8000 -t public
+```
+This starts PHP’s built-in development server.
+
+What it does:
+
+- `php` → runs PHP
+- `-S` → starts a local development server
+- `localhost:8000` → runs website at `http://localhost:8000`
+- `-t public` → sets public/ as the website root
+
+So only the `public` folder is accessible in the browser.
